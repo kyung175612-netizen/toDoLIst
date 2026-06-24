@@ -1,0 +1,39 @@
+#wrap {
+    background-color:greenyellow;
+    padding: 45px 15px;
+    width: 402px;
+    height: 874px;
+}
+/* ---------------------------------------------------1행 */
+#wrap > header {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#wrap > header > .title_search_menu {}
+#wrap > header > .title_search_menu > h1 {}
+#wrap > header > .title_search_menu > h1 > a {
+    font-size:1.125em;
+    font-weight: 700;
+}
+#wrap > header > .search_menu {}
+#wrap > header > .title_search_menu > .search_menu > .search_btn {
+    margin-right: 10px;
+}
+#wrap > header > .title_search_menu > .search_menu > .search_btn > img {
+    
+}
+#wrap > header > .title_search_menu >.search_menu > .menu_btn {}
+#wrap > header > .title_search_menu > .search_menu > .menu_btn > img {}
+/* ---------------------------------------------------2행 */
+#wrap > header > .all_today {}
+#wrap > header > .all_today > .all {
+    font-size:1.125em; color: #aaa;
+}
+#wrap > header > .all_today > .all > span {color:#aaa;}
+#wrap > header > .all_today > .today {
+    font-size:1.125em; color: #aaa;
+}
+#wrap > header > .all_today > .today > span {color:#aaa}
+#wrap > header > .all_today > .active {color:#000; font-weight: 700;}
+#wrap > header > .all_today > .active > span {color:#000; font-weight: 700;}

@@ -7,10 +7,13 @@
     <meta name="keywords" content="">
     <title>To-Do-list</title>
     <!-- 웹글꼴 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- 디자인 -->
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css"><!-- ★reset 먼저 작성 -->
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <link rel="stylesheet" href="./styles/study.css">
 </head>
 <body>
     <div id="wrap">
@@ -23,14 +26,39 @@
                 </div>
             </div>
             <div class="all_today">
-                <a href="#">All<span>(3)</span></a>
-                <a href="#">Today<span>(0)</span></a>
+                <a href="#" class="all active">All<span>(3)</span></a>
+                <a href="#" class="today">Today<span>(0)</span></a>
             </div>
             <!-- nav로 묶어도 가능 -->
         </header>
         <main>
-
+            <!-- 1. 날짜~할 일 목록 리스트-->
+            <ul class="to_do_list">
+                <li>
+                    <a href="#" class="date">05.12</a>
+                    <a href="#" class="content">매일 책 15분 읽기 목표</a>
+                </li>
+                <li>
+                    <a href="#" class="date">05.12</a>
+                    <a href="#" class="content">매일 책 15분 읽기 목표</a>
+                </li>
+                <li>
+                    <a href="#" class="date">05.12</a>
+                    <a href="#" class="content">매일 책 15분 읽기 목표</a>
+                </li>
+                <li>
+                    <a href="#" class="date">05.12</a>
+                    <a href="#" class="content">매일 책 15분 읽기 목표</a>
+                </li>
+            </ul>
+            <!-- 2. 글쓰기 버튼-->
+            <a href="#" class="write_popup_btn"><img src="./Images/write_btn.svg" alt="할 일 등록"></a>
+            <!-- 3. 글쓰기 버튼 클릭 시, 실행 화면-->
+            <div class="write_popup">
+                <p class="info">ADD A NEW TEXT</p>
+                <a href="#" class="write_btn"><img src="./Images/keyboard_return.svg" alt="글쓰가"></a>
+            </div>
         </main>
-    </div> 
+    </div><!-- e:#wrap -->
 </body>
 </html>

@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./styles/reset.css"><!-- ★reset 먼저 작성 -->
     <link rel="stylesheet" href="./styles/index.css">
     <!-- <link rel="stylesheet" href="./styles/study.css"> -->
+    <script src="./scripts/index.js" defer></script>
+    <!-- scrpit의 defer속성 : body태그를 모두 읽고 script 나중에 처리하는 속성 -->
 </head>
 <body>
     <div id="wrap">
@@ -136,12 +138,14 @@
                 </li>
             </ul>
             <!-- 2. 글쓰기 버튼-->
-            <a href="#" class="write_popup_btn"><img src="./Images/write_btn.svg" alt="할 일 등록"></a>
+            <button class="write_popup_btn" onclick="popupShow()"><img src="./Images/write_btn.svg" alt="할 일 등록"></button>
             <!-- 3. 글쓰기 버튼 클릭 시, 실행 화면-->
             <div class="write_popup">
-                <p class="info">ADD A NEW TEXT</p>
-                <a href="#" class="write_btn"><img src="./Images/keyboard_return.svg" alt="글쓰가"></a>
+                <input type="text" class="info" placeholder="ADD A NEW TASK">
+                <button class="write_btn"><img src="./Images/keyboard_return.svg" alt="글쓰기"></button>
             </div>
+            <!-- 글쓰기 팝업 뒤 배경 -->
+            <div class="popup_bg" onclick="popupHide()"></div>
         </main>
     </div><!-- e:#wrap -->
 </body>
